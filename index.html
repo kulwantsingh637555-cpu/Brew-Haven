@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSHAT YADAV & PRYGA YADAV | Coffee & Cafe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>AKSHAT <span class="logo-color">YADAV</span></span>
+            <span class="owner-name">&amp; PRYGA <span class="logo-color">YADAV</span></span>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="#menu" class="order-btn">Order Now</a>
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <p class="small-title"><i class="fa-solid fa-seedling"></i> Freshly Brewed • Every Day</p>
+        <h1>Where Every Sip<br>Feels Like <span>Home.</span></h1>
+        <p class="hero-text">Discover handcrafted coffee, delicious pastries, and a cozy place made for good moments.</p>
+        <div class="hero-buttons">
+            <a href="#menu" class="btn primary-btn">Explore Menu <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#about" class="btn secondary-btn">Our Story</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature"><i class="fa-solid fa-mug-hot"></i><div><h3>Fresh Coffee</h3><p>Freshly brewed every morning</p></div></div>
+    <div class="feature"><i class="fa-solid fa-leaf"></i><div><h3>Quality Beans</h3><p>Carefully selected coffee beans</p></div></div>
+    <div class="feature"><i class="fa-solid fa-heart"></i><div><h3>Made With Love</h3><p>Crafted specially for you</p></div></div>
+</section>
+
+<section class="about section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Coffee Shop">
+        <div class="experience"><strong>10+</strong><span>YEARS OF<br>BREWING</span></div>
+    </div>
+    <div class="about-content">
+        <p class="section-label">OUR STORY</p>
+        <h2>More Than Coffee,<br><span>It's a Feeling.</span></h2>
+        <p>Brew Haven was created as a warm and welcoming space where people can slow down, connect and enjoy a truly great cup of coffee.</p>
+        <p>From carefully selected beans to freshly baked pastries, everything we serve is prepared with passion and care.</p>
+        <a href="#contact" class="text-btn">Discover Our Story <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="menu section" id="menu">
+    <div class="section-heading">
+        <p class="section-label">OUR MENU</p>
+        <h2>Crafted For <span>Your Mood.</span></h2>
+        <p>Simple ingredients. Great taste. Beautiful moments.</p>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="coffee" type="button">Coffee</button>
+        <button class="filter" data-filter="tea" type="button">Tea</button>
+        <button class="filter" data-filter="bakery" type="button">Bakery</button>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-card" data-category="coffee">
+            <div class="menu-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Cappuccino"><span class="popular">Popular</span></div>
+            <div class="menu-info"><div class="menu-title"><h3>Cappuccino</h3><strong>₹180</strong></div><p>Rich espresso with steamed milk and creamy foam.</p></div>
+        </div>
+        <div class="menu-card" data-category="coffee">
+            <div class="menu-image"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Latte"></div>
+            <div class="menu-info"><div class="menu-title"><h3>Classic Latte</h3><strong>₹160</strong></div><p>Smooth espresso blended with warm steamed milk.</p></div>
+        </div>
+        <div class="menu-card" data-category="coffee">
+            <div class="menu-image"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Espresso"></div>
+            <div class="menu-info"><div class="menu-title"><h3>Espresso</h3><strong>₹120</strong></div><p>Bold, rich and perfectly balanced espresso shot.</p></div>
+        </div>
+        <div class="menu-card" data-category="tea">
+            <div class="menu-image"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Green Tea"></div>
+            <div class="menu-info"><div class="menu-title"><h3>Green Tea</h3><strong>₹110</strong></div><p>Light, refreshing and naturally aromatic green tea.</p></div>
+        </div>
+        <div class="menu-card" data-category="bakery">
+            <div class="menu-image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Croissant"></div>
+            <div class="menu-info"><div class="menu-title"><h3>Butter Croissant</h3><strong>₹140</strong></div><p>Crispy outside and soft, buttery inside.</p></div>
+        </div>
+        <div class="menu-card" data-category="bakery">
+            <div class="menu-image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Chocolate Cake"></div>
+            <div class="menu-info"><div class="menu-title"><h3>Chocolate Cake</h3><strong>₹220</strong></div><p>Rich chocolate cake with creamy frosting.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="special">
+    <div class="special-content">
+        <p class="section-label">TODAY'S SPECIAL</p>
+        <h2>AKSHAT YADAV<br><span>&amp; PRYGA YADAV.</span></h2>
+        <p>Get your favorite coffee with a freshly baked pastry and make your day a little better.</p>
+        <a href="#menu" class="btn primary-btn">View Specials <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="gallery section" id="gallery">
+    <div class="section-heading">
+        <p class="section-label">OUR SPACE</p>
+        <h2>A Place To <span>Slow Down.</span></h2>
+    </div>
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cafe">
+        <img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Coffee">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cafe interior">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cafe table">
+    </div>
+</section>
+
+<section class="reviews section" id="reviews">
+    <div class="section-heading">
+        <p class="section-label">CUSTOMER LOVE</p>
+        <h2>What People <span>Say.</span></h2>
+    </div>
+    <div class="review-grid">
+        <div class="review-card"><div class="stars">★★★★★</div><p>"The coffee is amazing and the atmosphere is even better. Definitely my favorite café!"</p><div class="customer"><div class="avatar">A</div><div><h4>Ananya</h4><span>Regular Customer</span></div></div></div>
+        <div class="review-card"><div class="stars">★★★★★</div><p>"Beautiful place, friendly staff and delicious pastries. Perfect place to relax."</p><div class="customer"><div class="avatar">R</div><div><h4>Rahul</h4><span>Coffee Lover</span></div></div></div>
+        <div class="review-card"><div class="stars">★★★★★</div><p>"Brew Haven feels like a second home. Their cappuccino is absolutely wonderful."</p><div class="customer"><div class="avatar">S</div><div><h4>Sneha</h4><span>Happy Customer</span></div></div></div>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <p class="section-label">COME SAY HI</p>
+            <h2>Let's Have A <span>Coffee.</span></h2>
+            <p>Whether you're here for a quick coffee, a conversation, or some quiet time, we'd love to see you.</p>
+            <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><h4>Our Location</h4><p>COFFEE STREET, BINDKI</p></div></div>
+            <div class="contact-item"><i class="fa-solid fa-clock"></i><div><h4>Opening Hours</h4><p>Monday – Sunday: 8:00 AM – 10:00 PM</p></div></div>
+            <div class="contact-item"><i class="fa-solid fa-phone"></i><div><h4>Call Us</h4><p>6375558128</p><p>7307558147</p></div></div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <h3>Send Us A Message</h3>
+            <p class="owner-note">PRYGA &amp; AKSHAT — OWNERS</p>
+            <div class="input-group"><input type="text" id="name" placeholder="Your Name" required></div>
+            <div class="input-group"><input type="email" id="email" placeholder="Your Email" required></div>
+            <div class="input-group"><textarea id="message" rows="5" placeholder="Your Message" required></textarea></div>
+            <button type="submit" class="btn primary-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="#home" class="logo"><i class="fa-solid fa-mug-hot"></i><span>AKSHAT <span class="logo-color">YADAV</span></span><span class="owner-name">&amp; PRYGA <span class="logo-color">YADAV</span></span></a>
+            <p>Crafted with love, served with warmth.</p>
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links"><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#contact">Contact</a></div>
+        <div class="footer-links"><h4>Services</h4><a href="#menu">Coffee</a><a href="#menu">Bakery</a><a href="#contact">Catering</a><a href="#contact">Events</a></div>
+
+        <div class="footer-newsletter">
+            <h4>Made with LOVE — PRYGA &amp; AKSHAT ❤️ ☕</h4>
+            <p>Get updates about new drinks and special offers.</p>
+            <form id="newsletter">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright"><p>© 2026 Akshat Yadav &amp; Pryga Yadav. All Rights Reserved.</p><p>Made with ☕ &amp; ❤️</p></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
